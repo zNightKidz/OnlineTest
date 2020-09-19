@@ -1,9 +1,11 @@
 import requests
 import unittest
-import json
+
 
 
 class MyTest(unittest.TestCase):
+    '''接口名称：获取站点信息'''
+
     def setUp(self):
         print("start test!")
         pass
@@ -22,6 +24,9 @@ class test_allFacility_get(MyTest):
         print("起始位置为：", self.foo)
         self.assertNotEqual(self.foo,-1)
 
-if __name__ == "__main__":
-    unittest.main()
+    def test_1(self):
+        self.assertEqual(1,1)
+    def test_2(self):
+        self.assertNotEqual(1,2)
+
 
