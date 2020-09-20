@@ -30,9 +30,9 @@ def send_mail(file_new):
     msg['Subject'] = Header('接口自动化测试报告','utf-8')
 
     smtp = smtplib.SMTP()
-    smtp.connect('smtp.163.com')
-    smtp.login('zhangjinbo@ndtchina.com','zhjinbo2018!')
-    smtp.sendmail('zhangjinbo@ndtchina.com','zhangjinbo@ndtchina.com',msg.as_string())
+    smtp.connect('smtp.163.com',25)
+    smtp.login('zjinbo_0311@163.com',"1175233452zjb")
+    smtp.sendmail('402248867@qq.com',msg.as_string())
     smtp.quit()
     print('邮件已发出！')
 
